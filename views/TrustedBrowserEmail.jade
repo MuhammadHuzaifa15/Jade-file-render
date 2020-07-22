@@ -1,0 +1,108 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=0.8, maximum-scale=0.8')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,100,300,600,700', rel='stylesheet', type='text/css')
+  body(style='background-color: #f5f5f5; margin: 0;')
+    #main-container(style="background: #fff; font-family: 'Lato', sans-serif; font-size: 14px; color: #73848e; text-align: center; margin: 0 auto; max-width: 620px;")
+      #header(style='padding-top: 50px; margin-bottom: 10px;')
+        img(src='https://cdn-science37.s3.amazonaws.com/wp-content/uploads/2017/02/Science-37-Logo@2x.png', border='0', width='250' alt='Science 37')
+      #content(style='text-align: left; padding: 20px 70px 40px;')
+        h1(style='color: #72c600; font-size: 18.5px; margin: 25px 0; font-weight: normal')
+          if languageCode === 'SPA'
+            span Science 37 NORA: nuevo navegador de confianza
+          else if languageCode === 'ZHS'
+            span Science 37 NORA - 新的可信任浏览器
+          else if languageCode === 'ZHT'
+            span Science 37 NORA - 信任的新瀏覽器
+          else if languageCode === 'JPN'
+            span Science 37 NORA − 新規の信頼済みブラウザー
+          else if languageCode === 'KOR'
+            span Science 37 NORA - 신규 신뢰하는 브라우저 설정
+          else if languageCode === 'IT'
+              span Science 37 NORA - Nuovi browser attendibili
+          else
+            span Science 37 NORA - New Trusted Browser
+        div(style='padding-bottom: 30px; color: #000')
+          if languageCode == 'SPA'
+            p Se inició sesión en su cuenta de NORA y se confió en un navegador nuevo no reconocido. Si no reconoce esta actividad, alguien puede tener su contraseña.
+          else if languageCode === 'ZHS'
+            p 您的 NORA 账户已登录并将一个无法识别的新浏览器设置为可信任的浏览器。如非您本人操作，可能有人已知道您的密码。
+          else if languageCode === 'ZHT'
+            p 您的 NORA 帳號已登入，並將無法辨識的新瀏覽器設為信任。如果您不清楚是誰執行了此項操作，代表您的密碼可能已落入他人手中。
+          else if languageCode === 'JPN'
+            p お持ちのNORAアカウントがサインインに使われ、認識されていない新規ブラウザーで信頼されました。このアクティビティに覚えがない場合は、誰かがあなたのパスワードを持っている可能性があります。
+          else if languageCode === 'KOR'
+            p 귀하는 NORA 계정으로 로그인하여 알 수 없는 새로운 브라우저를 신뢰하는 브라우저로 설정했습니다. 이 활동을 알지 못하는 경우, 누군가 귀하의 비밀번호를 사용한 것일 수 있습니다.
+          else if languageCode === 'IT'
+            p Si è verificato un accesso ritenuto attendibile al tuo account NORA con un browser nuovo non riconosciuto. Se non riconosci questa attività, qualcuno potrebbe essere in possesso della tua password.
+          else
+            p Your NORA account was signed in and trusted on a new unrecognized browser. If you do not recognize this activity, someone may have your password.
+
+
+          if languageCode == 'SPA'
+            p Nota: Si usó un navegador que no usa normalmente en una computadora que utiliza con frecuencia, recibirá esta notificación. Los navegadores comunes son Google Chrome, Firefox, Internet Explorer y Safari.
+          else if languageCode === 'ZHS'
+            p 注：如果您在常用电脑上使用了不常用的浏览器，则会收到该通知。常用浏览器包括 Google Chrome、Firefox、Internet Explorer 和 Safari。
+          else if languageCode === 'ZHT'
+            p 注意：如果在經常使用的電腦使用不常用的瀏覽器，您就會收到此通知。常見的瀏覽器包含 Google Chrome、Firefox、Internet Explorer 和 Safari。
+          else if languageCode === 'JPN'
+            p 注意: 頻繁に使用するコンピューターで通常使用しないブラウザーを使用した場合、この通知を受け取ります。一般的なブラウザーとしては、Google Chrome、Firefox、Internet Explorer、Safariなどがあります。
+          else if languageCode === 'KOR'
+            p 참고: 이 알림은 자주 사용하는 컴퓨터에서 일반적으로 사용하지 않는 브라우저를 사용할 때 받게 됩니다. 일반적인 브라우저로는 Google Chrome, Firefox, Internet Explorer, Safari 등이 있습니다.
+          else if languageCode === 'IT'
+            p Nota: se hai utilizzato un browser che normalmente non usi su un computer che usi di frequente, riceverai questa notifica. I browser comuni includono Google Chrome, Firefox, Internet Explorer e Safari.
+          else
+            p Note: If you used a browser you do not normally use on a computer that you frequently use, you will receive this notification. Common browsers include Google Chrome, Firefox, Internet Explorer and Safari.
+
+
+          if languageCode == 'SPA'
+            p Si no reconoce esta actividad, debe acceder a su cuenta de NORA para cambiar su contraseña y eliminar todos los navegadores de confianza.
+          else if languageCode === 'ZHS'
+            p 如非您本人操作，请登进您的 NORA 账户，更改当前密码并删除所有已设置为可信任的浏览器。
+          else if languageCode === 'ZHT'
+            p 如果您不清楚是誰執行了此項操作，應存取 NORA 帳號並更改密碼，然後刪除所有信任的瀏覽器。
+          else if languageCode === 'JPN'
+            p このアクティビティに覚えがない場合は、NORAアカウントにアクセスしてパスワードを変更し、信頼済みブラウザーをすべて削除する必要があります。
+          else if languageCode === 'KOR'
+            p 이 활동을 알지 못하는 경우에는 NORA 계정으로 접속하여 비밀번호를 변경하고 신뢰하는 모든 브라우저를 삭제해야 합니다.
+          else if languageCode === 'IT'
+            p Se non riconosci questa attività, devi accedere al tuo account NORA, modificare la password ed eliminare tutti i browser attendibili.
+          else
+            p If you do not recognize this activity you should access your NORA account to change your password and delete all trusted browsers.
+
+          div(style="text-align: center;")
+            a(href='#{linkURL}', style='display: inline-block; padding: 10px 14px; border-radius: 20px; min-width: 107px; text-transform: uppercase; background-color: #72c600; color: #fff; text-decoration: none; font-weight: 600; text-align: center; margin-top: 40px;') Open NORA
+      #footer(style='background-color: #f5f5f5; padding: 0 0 20px 0;')
+        div(style='padding: 20px 10px; font-size: 12px; color: #73848e')
+          p(style='margin:0')
+            if languageCode == 'SPA'
+              span No responda a este correo electrónico. Comuníquese con su administrador del sistema si tiene preguntas.
+            else if languageCode === 'ZHS'
+              span 请勿回复本电子邮件。如有问题，请联系您的系统管理员。
+            else if languageCode === 'ZHT'
+              span 這個電子郵件地址無法收到回覆。如有疑問，請聯絡系統管理員
+            else if languageCode === 'JPN'
+              span このメールは返信を受け取ることができません。質問がありましたら、システム管理者にお問い合わせください。
+            else if languageCode === 'KOR'
+              span 이 이메일은 발신 전용입니다. 질문은 시스템 관리자에게 문의하십시오.
+            else if languageCode === 'IT'
+              span Questa e-mail non è abilitata a ricevere risposte. Per eventuali domande, contatta l’amministratore di sistema.
+            else
+              span This email can't receive replies. Contact your system administrator for questions.
+          p(style='margin:0')
+            if languageCode == 'SPA'
+              span Recibió este anuncio obligatorio por correo electrónico para informarle sobre los posibles riesgos de seguridad para su cuenta de NORA.
+            else if languageCode === 'ZHS'
+              span NORA 这是一封必须要发送给您的电子邮件公告，旨在通知您的 NORA 账户存在潜在安全风险
+            else if languageCode === 'ZHT'
+              span NORA 強制寄給您這封電子郵件通知，是為了通知您 NORA 帳號具有潛在安全風險
+            else if languageCode === 'JPN'
+              span このメールは、お持ちのNORAアカウントにセキュリティリスクの可能性があることをお知らせする義務に基づいて、送信されました。
+            else if languageCode === 'KOR'
+              span 이 이메일은 NORA 계정에 대한 잠재적 보안 위험을 알리는 필수 이메일 알림입니다.
+            else if languageCode === 'IT'
+              span Hai ricevuto questo messaggio e-mail obbligatorio per informarti di potenziali rischi per la sicurezza del tuo account NORA.
+            else
+              span You received this mandatory email announcement to inform you of potential security risks to your NORA account.
+          p(style='margin:0') Science 37 · 12121 Bluff Creek Drive Suite 100 Los Angeles, CA 90094

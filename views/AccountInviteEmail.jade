@@ -1,0 +1,174 @@
+doctype html
+html
+    head
+        style.
+            .content {
+                padding: 0;
+            }
+
+            .content-container {
+                padding: 20px 30px;
+                display: block;
+            }
+
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .setPassword {
+                margin: 10px 0;
+                padding: 12px 18px;
+                border-radius: 16px;
+                border: 1px solid #7dc038;
+                background-color: #7dc038;
+                display: inline-block;
+                color: white !important;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 12px;
+            }
+
+            .heroImage {
+                padding: 0;
+            }
+
+            @media screen and (min-width: 425px) {
+                .content-container {
+                    display: flex;
+                }
+
+                .desktop {
+                    display: block;
+                }
+
+                .mobile {
+                    display: none;
+                }
+
+                .content {
+                    padding: 10% 0;
+                }
+
+                .setPassword {
+                    padding: 6px 16px;
+                }
+
+                .heroImage {
+                    padding: 10px 30px 0 30px;
+                }
+            }
+        meta(name='viewport', content='width=device-width, initial-scale=0.8, maximum-scale=0.8')
+        link(href='https://fonts.googleapis.com/css?family=Lato:400,100,300,600,700', rel='stylesheet', type='text/css')
+    body(style='background-color: #f5f5f5; margin: 0; color: #29353B;')
+        .content
+            #main-bg(style='background-color: #ffffff; max-width: 512px; margin: auto;')
+                div(style="text-align: center; padding: 20px 0 10px;")
+                    img(src='https://stage-nora-science37.s3-us-west-2.amazonaws.com/public-email-assets/science37-logo-white.png', height='40px' alt='Science 37')
+                .heroImage
+                    img(src='https://s3-us-west-2.amazonaws.com/stage.corp.science37.com/email-assets/nora-email-laptop.jpg', border='0', width='100%' alt='Science 37')
+                if languageCode === 'SPA'
+                    .content-container
+                        .left-content(style="margin-right: 40px;")
+                            span(style="font-size: 2.3em; display: block; margin-top: 20px;") ¿Listo para
+                            span(style="font-size: 2.3em; font-weight: bold; margin: 0; line-height: 1.2;") comenzar?
+                            p Antes que nada, necesitamos configurar la contraseña. ¡Pero no espere demasiado tiempo! Este enlace vence en 24 horas.
+                            a.setPassword(href="#{linkURL}", target="_blank")
+                                span Establecer una contraseña
+                        .right-content
+                            p Por cierto, nadie está verificando esta bandeja de entrada, así que no responda a este mensaje.
+                            p Si no hizo esta solicitud, puede ignorar este correo electrónico (estaremos un poco desanimados, pero no resentidos).
+                            p ¡Nos entusiasma trabajar con usted!
+                            p ― El equipo de Science 37
+                            p(style="font-weight: bold") P.D. ¿Todavía necesita ayuda? Comuníquese con el contacto que tiene en Science 37.
+                else if languageCode === 'ZHS'
+                    p #{name}:
+                    p 我们收到了您的账户重置密码请求。
+                    p 如果您请求为电子邮件 #{email} 所对应的账户重置密码，请单击下面的按钮。如果您未作出此请求，请忽略本电子邮件。
+                    a(href="#{linkURL}", style="text-decoration:none;border-style:none;border:0;padding:0;margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:500;color:#ffffff;text-align:center;text-decoration:none;border-radius:4px;padding:11px 30px;border:1px solid #7dc038;background-color:#7dc038;display:inline-block", target="_blank")
+                        strong 重置密码
+                    p 如果链接不起作用，您也可以复制下面的链接并粘贴到您的浏览器中：
+                    p #{linkURL}
+                    p 请注意，该链接将在 15 分钟后过期。
+                    hr
+                    small 这是系统生成的电子邮件，请勿回复。
+                else if languageCode === 'ZHT'
+                    p #{name},
+                    p 我們收到重設您帳號密碼的請求。
+                    p 如果您確有請求對 #{email} 進行重設，請按一下以下按鈕。如果您未曾提出該請求，請忽略此電子郵件。
+                    a(href="#{linkURL}", style="text-decoration:none;border-style:none;border:0;padding:0;margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:500;color:#ffffff;text-align:center;text-decoration:none;border-radius:4px;padding:11px 30px;border:1px solid #7dc038;background-color:#7dc038;display:inline-block", target="_blank")
+                        strong 重設密碼
+                    p 若連結無效，您亦可複製以下連結，並將其貼至您的瀏覽器：
+                    p #{linkURL}
+                    p 請注意，連結將於 15 分鐘後過期。
+                    hr
+                    small 此為系統產生的電子郵件，請勿回覆
+                else if languageCode === 'JPN'
+                    .content-container
+                        .left-content(style="margin-right: 40px;")
+                            p #{name},
+                            p アカウントのパスワードをリセットするリクエストを受け取りました。
+                            p #{email} のリセットをリクエストした場合は、以下のボタンをクリックしてください。このリクエストをしていない場合は、この電子メールを無視してください。
+                            a(href="#{linkURL}", style="text-decoration:none;border-style:none;border:0;padding:0;margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:500;color:#ffffff;text-align:center;text-decoration:none;border-radius:4px;padding:11px 30px;border:1px solid #7dc038;background-color:#7dc038;display:inline-block", target="_blank")
+                                strong パスワードをリセット
+                            p リンクがうまく機能しない場合は、以下のリンクをブラウザーにコピー＆ペーストすることもできます。
+                            p #{linkURL}
+                            p リンクは15分で無効となります。
+                            hr
+                            small これはシステムより配信された電子メールですので、返信しないようお願いいたします。
+                else if languageCode === 'KOR'
+                    p #{name},
+                    p 귀하의 계정에 대한 비밀번호 재설정 요청을 받았습니다.
+                    p #{email}에 대해 재설정을 요청한 경우, 아래의 버튼을 클릭하시기 바랍니다. 이 요청을 하지 않은 경우, 이 이메일을 무시해주십시오.
+                    a(href="#{linkURL}", style="text-decoration:none;border-style:none;border:0;padding:0;margin:0;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:500;color:#ffffff;text-align:center;text-decoration:none;border-radius:4px;padding:11px 30px;border:1px solid #7dc038;background-color:#7dc038;display:inline-block", target="_blank")
+                        strong 비밀번호 재설정
+                    p 링크가 열리지 않을 경우, 아래의 링크를 복사하여 브라우저에 불여넣기 하십시오.
+                    p #{linkURL}
+                    p 링크는 15분 후에 만료된다는 점을 유의해주시기 바랍니다.
+                    hr
+                    small 시스템에서 자동 생성된 이메일입니다. 이 메시지에 회신하지 마십시오.
+                else if languageCode === 'ITA'
+                    .content-container
+                        .left-content(style="margin-right: 40px;")
+                            span(style="font-size: 2.3em; display: block; margin-top: 20px;") Pronto a
+                            span(style="font-size: 2.3em; font-weight: bold; margin: 0; line-height: 1.2;") iniziare?
+                            p Per prima cosa, devi impostare la tua password. Ma non aspettare troppo! Questo link scade tra 24 ore.
+                            a.setPassword(href="#{linkURL}", target="_blank")
+                                span Imposta una password
+                        .right-content
+                            p A proposito, questa casella di posta in arrivo non viene controllata da nessuno, quindi non rispondere a questo messaggio.
+                            p Se non sei stato tu a effettuare questa richiesta, puoi ignorare questa e-mail (ci dispiace un po’, ma non ci offenderemo).
+                            p Non vediamo l’ora di lavorare con te!
+                            p – Il team Science 37
+                            p(style="font-weight: bold") P.S.: ti serve ancora aiuto? Contatta il tuo referente Science 37.
+                else if languageCode === 'FRA'
+                    .content-container
+                        .left-content(style="margin-right: 40px;")
+                            span(style="font-size: 2.3em; display: block; margin-top: 20px;") Prêt à
+                            span(style="font-size: 2.3em; font-weight: bold; margin: 0; line-height: 1.2;") commencer?
+                            p Tout d’abord, nous allons devoir définir votre mot de passe. Mais n’attendez pas trop longtemps! Ce lien expirera dans 24 heures.
+                            a.setPassword(href="#{linkURL}", target="_blank")
+                                span Définir un mot de passe
+                        .right-content
+                            p Au fait, aucun être humain ne consulte cette boîte de messagerie, alors merci ne pas répondre à ce message.
+                            p Si vous n’êtes pas à l’origine de cette demande, vous pouvez ignorer cet e-mail (nous serons un peu déçus, mais sans rancune!).
+                            p Nous sommes impatients de travailler avec vous!
+                            p – L’équipe Science 37
+                            p(style="font-weight: bold") P.S. Encore besoin d’aide ? Veuillez contacter votre interlocuteur Science 37.
+                else
+                    .content-container
+                        .left-content(style="margin-right: 40px;")
+                            span(style="font-size: 2.3em; display: block; margin-top: 20px;") Ready to
+                            span(style="font-size: 2.3em; font-weight: bold; margin: 0; line-height: 1.2;") get started?
+                            p First, we'll need to set up your password. But don't wait too long! This link will expire in 24 hours.
+                            a.setPassword(href="#{linkURL}", target="_blank")
+                                span Set a password
+                        .right-content
+                            p By the way, no actual human is checking this inbox. so please do not reply to this message.
+                            p If you didn't make this request, you can ignore this email (we'll be a little bummed out, but no hard feelings).
+                            p Can't wait to work with you!
+                            p ― The Science 37 Team
+                            p(style="font-weight: bold") P.S still need help? Please reach out to your Science 37 contact.

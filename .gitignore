@@ -1,0 +1,35 @@
+# Packages #
+node_modules
+
+# Log files #
+npm-debug.log
+.cache
+
+# Build files #
+coverage
+dist
+
+# OS generated files #
+.vscode
+.idea
+
+# Other files #
+licenses
+*.pem
+.tern-port
+.cache-loader
+.cache
+.eslintcache
+.DS_Store
+cypress/videos
+cypress/screenshots
+mobile/android/app/release/app-release.apk
+mobile/android/app/debug/app-debug.apk
+mobile/android/app/debug/output.json
+mobile/android/app/release/output.json
+mobile/ios/zoom/lib
+mobile/firebase-debug.log
+jest_html_reporters.html
+*.hprof
+*.xcuserstate
+.env
