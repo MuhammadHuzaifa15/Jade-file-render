@@ -10,6 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "jade": "^1.11.0"
+    "html2jade": "^0.8.6",
+    "html2pug": "^4.0.0",
+    "jade": "^1.11.0",
+    "nodemon": "^2.0.4",
+    "pug": "^0.1.0",
+    "xhtml2pug": "^1.1.2"
   }
 }

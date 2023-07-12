@@ -1,0 +1,23 @@
+doctype html
+html
+    head
+        link(href='https://fonts.googleapis.com/css?family=Lato&display=swap', rel='stylesheet')
+    body
+        #container(style='width: 800px; margin: 0 auto; background-color: #ffffff;')
+            #header(style='width: 600px; padding: 25px 0 15px; margin: 0 100px; border-bottom: 1px solid #334750; text-align: center;')
+                img(src='https://stage-nora-science37.s3-us-west-2.amazonaws.com/public-email-assets/science37-logo-white.png', alt='logo', style='height: 39.58px;	width: 128px;')
+            #content(style='width: 600px; padding: 0 100px 40px; border-bottom: 1px solid #F8F9F9;')
+                h4(style="color: #334750;	font-family: 'Lato', sans-serif; font-weight: normal;	font-size: 26px;	line-height: 32px; margin: 40px 0 30px;") Dear #{sitenumber || '<XXX>'},
+                p(style="color: #334750;	font-family: 'Lato', sans-serif; font-size: 18px;	line-height: 27px;") This email is to inform you that Subject ID #{subjectnumber || '<XXX>'} has completed their eDiary and reported Covid Like Illnesses (CLI).  Please contact this patient for further evaluation.
+                    br
+                    br
+                p(style="color: #334750;	font-family: 'Lato', sans-serif; font-size: 18px;	line-height: 27px;") Sincerely
+                p(style="color: #334750;	font-family: 'Lato', sans-serif; font-size: 18px;	line-height: 27px;") Science37 HelpDesk
+            #footer(style="width: 800px; background-color: #F8F9F9; color: #637381; font-family: 'Lato', sans-serif;	font-size: 14px;	line-height: 20px;	text-align: center;")
+                div(style="padding: 34px 100px;")
+                    p Please do not respond to this email, as this inbox is not monitored. This email was automatically sent to you by our system.
+                        br
+                    span Science 37 - 12121 Bluff Creek Drive Suite 100 Los Angeles, CA 90094
+                    div
+                        br
+                        a(href=footer_privacy_link_url, style='color: #637381; text-decoration: none;') Privacy Policy

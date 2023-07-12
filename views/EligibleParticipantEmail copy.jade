@@ -80,36 +80,24 @@ html
                     font-size: 16px;
                 }
             }
+        
     body
-        #container
-            #header
-                img(src='https://stage-nora-science37.s3-us-west-2.amazonaws.com/public-email-assets/science37-logo-white.png', alt='logo')
-            #content
-                p.name Hi #{firstname},
-                p We think it’s great that you’re interested in taking part in a research study - and we appreciate the time you took to sign up. Unfortunately, the Science 37 study you applied for isn’t a fit for you. If you have any questions about why you didn’t match the study  or want more information, please reach out to us at &nbsp;
-                    strong recruitment@science37.com.
+        #container(style=' width: 800px; margin: 0 auto; background-color: #ffffff;')
+            #header(style=' width: 600px; padding: 25px 0 15px; margin: 0 auto; border-bottom: 1px solid #334750; text-align: center;')
+                img(style='height: 40px; width: 128px;' src='https://stage-nora-science37.s3-us-west-2.amazonaws.com/public-email-assets/science37-logo-white.png', alt='logo')
+            #content(style='width: 600px; margin: 0 auto 40px; border-bottom: 1px solid #F8F9F9;')
+                p(style="color: #334750; font-family: 'Lato', sans-serif; font-size: 18px; line-height: 25px; margin: 50px 0 30px") Hello #{firstname},
+                p(style="color: #334750; font-family: 'Lato', sans-serif; font-size: 18px; line-height: 25px") Thank you for completing our online screening for the Sucrose Challenge Test and Sucrose Breath Test clinical research study. Based on your initial responses, you may qualify to participate!  A member from our Patient Experience Team will contact you in the next 24 hours via the phone number and e-mail address you provided to complete the full pre-screen questionnaire. Your questionnaire will take approximately 10-15 minutes to complete which will determine if you can then enroll. &nbsp;
+                p(style="color: #334750; font-family: 'Lato', sans-serif; font-size: 18px; line-height: 25px") If you are interested to get started earlier or learn more about the study, please contact one of our team members by calling or texting 877-726-3361 or email: headandneckad@science37.com. 
+                p(style="color: #334750; font-family: 'Lato', sans-serif; font-size: 18px;line-height: 25px") Thank you for your time and interest! We look forward to discussing the study details with you!
+                p(style="color: #334750; font-family: 'Lato', sans-serif; font-size: 18px;line-height: 25px") Kindly,
                     br
                     br
-                    span We know that this news can be very disappointing but we want to help you try to match a study in the future.
-                    br
-                    br
-                    span But please don’t let this be goodbye. We will keep your contact and application information on file and reach out should you qualify for another study.
-                    br
-                    br
-                    span If you would like for us to delete your contact information, your application, or both, please contact us at &nbsp;
-                    strong recruitment@science37.com.
-                    br
-                    br
-                    span We hope you’ll take a look at our open studies (or keep checking back!) and find another study that may be a better fit.
-                div(style='text-align: center; margin: 60px 0;')
-                    a.btn(href='https://www.science37.com/') View open trials
-                p Sincerely,
-                    br
-                    span The Science 37 Team
-            #footer
+                    span(style="color: #334750; font-family: 'Lato', sans-serif; font-size: 18px; line-height: 25px") The Science 37 Patient Experience Team
+            #footer(style="padding: 34px 100px; background-color: #F8F9F9; color: #637381; font-family:'Lato', sans-serif; font-size: 14px; line-height: 20px; text-align: center")
                 p Please do not respond to this email, as this inbox is not monitored. This email was automatically sent to you by our system.
                     br
-                span Science 37 - 12121 Bluff Creek Drive Suite 100 Los Angeles, CA 90094
+                span Science 37
                 div
                     br
-                    a(href='https://www.science37.com/privacy-policy/', style='color: #637381; text-decoration: none;') Privacy Policy
+                    a(href='https://www.science37.com/privacy-policy/', style='color: #637381; text-decoration: none;') Privacy Policy 
